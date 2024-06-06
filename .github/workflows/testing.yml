@@ -16,12 +16,6 @@ jobs:
         ruby:
           - "3.3"
           - "ruby-head"
-        include:
-          - ruby:                 "2.1"
-            bundler:              "1"
-
-          - ruby:                 "2.2"
-            bundler:              "1"
 
     continue-on-error: ${{ endsWith(matrix.ruby, 'head') }}
 
